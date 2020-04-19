@@ -1,0 +1,73 @@
+.heading {
+	margin: 3%  0;
+}
+
+.intro {
+	margin-top: 2%;
+}
+
+.intro2 {
+	margin: 2% 0;
+}
+
+.mono {
+	font-family: monospace;
+}
+
+.mono1 {
+	margin-left: 4%;
+	/*border-bottom: 1px solid #ccc; */
+	margin-bottom: 1%;
+}
+
+.opak {
+	background-color: #777;
+	color: white;
+}
+
+.menu {
+	/*position: fixed;*/
+	font-size: 0.9rem;
+}
+
+.subchapter {
+	margin-bottom: 5%;
+}
+
+.menu ul  {
+	list-style: none;
+}
+
+
+.menu ul li a {
+	color: #556B2F;
+}
+
+.mono1 a {
+	color: #556B2F;
+}
+
+.guzik {
+	margin-top: 2%;
+	border-color: #556B2F;
+	color: #556B2F;
+
+}
+
+.guzik:hover {
+	background-color: #556B2F;
+	color: #fff;
+}
+
+.title {padding: 5px;}
+
+h1, h2, h3, h4 {
+	color: #556B2F;
+}
+
+.icon {
+	color: #556B2F;
+	margin: 1% 0;
+
+}
+

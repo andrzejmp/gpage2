@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Some IT stuff</title>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style3.css">
+     
+     <link rel="stylesheet" href="css/googlecode.css">
+     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-inner">
+        <a class="navbar-brand" href="#">__ap stuff__</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other stuff
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               
+                <a class="dropdown-item" href="#">Information Technology</a>
+               <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">Software Engineering</a>
+                 <a class="dropdown-item" href="#">Modern programming languages</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discusion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <!--
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    
+      
+       <main role="main" class="container">
+
+          <div class="row heading">
+            <div>
+                <h1 class="mt-5">Object Oriented programming in C#</h1>
+            </div>
+            <p  class="card card-body bg-light intro">
+              Here we'll focus on some basic features of object oriented programming in C#.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="menu" id="menu">
+              <ul>
+                <li><a href="#1">Intro to C#</a>
+                  <ul class=submenu>
+                    <li><a href="#101">The First Program</a></li>
+                    <li><a href="#102">Variables and Data Types</a></li>
+                    <li><a href="#103">Data Types</a></li>
+                  </ul>
+                </li>  
+              </ul>
+
+            </div>  
+
+            </div>
+
+<div class="col-xs-9 col-sm-9 col-md-9"> <!-- II col -->
+              <!-- TUTAJ -->
+
+<!-- chapter-->
+<h3 id="1">1. Intro to C#</h3>
+<p class="card card-body bg-light intro2">Twelve simple programs in C# will introdce you into the basics of this language.</p>
+
+<!-- 1 sub chapter --------------------------->
+<div class="subchapter">
+<div class-"kod">
+<h4 id="101">1.01 The Name of the Computer</h4> 
+<p class="card card-body bg-light intro2">Program 01 prints the NetBIOS name of the local computer to the console. Some basic concepts and terms of C# programming are introroduced.</p> 
+<pre><code class="csharp">/*Program 01. 
+prints the NetBIOS name of the local 
+computer to the console.*/
+using System;  
+namespace ComputerStuff 
+{    
+  class Computer
+  {    
+    // Main method 
+    static void Main(string[] args) 
+    { 
+      // Printing something
+      Console.WriteLine("The name of this computer is: " + Environment.MachineName); 
+      Console.ReadKey(); 
+    } 
+   } 
+ } 
+ </code></pre>
+</div> <!-- kod -->
+
+<!-- exp -->
+
+<i class="fas fa-graduation-cap fa-2x icon"></i>
+<div class="mono1">  
+<span class="mono">/*Program 01.<br>  
+  Prints the name of a computer to the console*/</span> - a multi lines comment (lines 1 - 3)</div> 
+
+<div class="mono1"> 
+<span class="mono">using System</span> - enables to include the System namespace in the program - the collection of fundamental classes of C# (line 4).</div> 
+
+<div class="mono1"> 
+<span class="mono">namespace ComputerStuff</span> - declaration of the namespace <span class="mono">ComputerStuff</span> that contains one class <span class="mono">Computer</span> (line 5).</div> 
+ 
+<div class="mono1"> 
+<span class="mono">// Main method</span> - a single line comment (line 9).</div> 
+
+<div class="mono1"> 
+<span class="mono">class</span> - user-defined blueprint used to create objects. In this program no objects are created. Here, name of the class is <span class="mono">Computer</span> (line 6).</div>
+
+<div class="mono1"> 
+<span class="mono">Main()</span> - a method that is the entry-point a C# application (here the program control starts and ends) (line 10).</div>
+
+<div class="mono1"> 
+<span class="mono">void Main()</span> - the method <span class="mono">Main()</span> does not return anything (line 10).</div>
+
+<div class="mono1"> 
+<span class="mono">static void Main()</span> - the keyword <span class="mono">static</span> is a modifier that declares that the method <span class="mono">Main()</span> is a static member. The class to which this member belongs does not have to be instantiated (line 10).</div>
+
+<div class="mono1"> 
+<span class="mono">Console.WriteLine()</span> - a method of the Console class, defined in the System namespace that prints a message to the console. (line 13).</div>
+
+<div class="mono1"> 
+<span class="mono">Environment.MachineName</span> - a property of the System namespace that gets the NetBIOS name of the local computer(line 13).</div>
+
+
+<div class="mono1"> 
+<span class="mono">Console.ReadKey()</span> - a method of the Console class, defined in the System namespace that is used to halt a program execution until the user presses a key (line 14).</div>
+
+<!-- exp -->
+<i class="fas fa-exclamation fa-2x icon"></i>
+<div class="mono1">In C# we concatenate two strings using operator <span class="mono">+</span>:<br> 
+<span class="mono">"The name of this computer is: " + Environment.MachineName</span></a>.
+</div>
+
+<!-- task -->
+<i class="fas fa-puzzle-piece fa-2x icon"></i>
+<div class="mono1">
+Ex. 01. Write a program that displays the version of operating 
+system of your computer and number of its CPUs. You can find info on <a href="https://stackoverflow.com/">stack overflow</a>.
+</div>
+<a href="#menu"><button class="btn btn-outline-primary guzik">menu</button></a>
+<a href="#menu"><button class="btn btn-outline-primary guzik">github</button></a>
+<a href="https://onlinegdb.com/HJACbHiU8" target="_blank"><button class="btn btn-outline-primary guzik">online compiler</button></a>
+
+<hr>
+</div>
+<!-- task -->
+<!-- 1 ------------------------------------------->
+
+<!-- 2 ------------------------------------------->
+<div class="subchapter">
+<div class-"kod">
+<h4 id="102">1.02 The Number Pi</h4>  
+<p class="card card-body bg-light intro2">Program 02 calculates the value of nuber Pi. Variables and data types in C#.</p>
+<pre><code class="csharp">/* Program 02. 
+calculates the value of number pi
+pi = 4/1 - 4/3 + 4/5 - 4/7 ...
+*/
+
+using System;  
+namespace SomeMath 
+{    
+  class NumberPi
+  {    
+     static void Main(string[] args) 
+    { 
+     //declaration and initialization of the variable pi
+     double pi = 0.0; 
+
+     //Test 1
+     pi = 4/1 - 4/3 + 4/5 - 4/7 + 4/9;
+     Console.WriteLine("Test 1: pi = " + pi);
+    
+     //Test 2
+     pi = 0.0;
+     pi = 4.0/1 - 4.0/3 + 4.0/5 - 4.0/7 + 4.0/9;
+     
+     int test = 2;
+     string output = "Test " + test.ToString() + ": pi = " + pi.ToString();
+     Console.WriteLine(output);
+     
+     //Test 3
+     pi = 0.0;
+     double num = 4.0; 
+     int den = 1;
+     
+     pi = num / den;
+     
+     den = den + 2;
+     pi = pi - num / den;  
+     
+     den = den + 2;
+     pi = pi + (num / den);
+     
+     den += 2;
+     pi -= num / den;  
+     
+     den += 2;
+     pi += num / den;
+     
+     test = 3;
+     Console.WriteLine("Test {0}: pi = {1}", test, pi);
+    } 
+   } 
+ } 
+
+ </code></pre>
+</div> <!-- kod -->
+
+<!-- exp -->
+
+<i class="fas fa-graduation-cap fa-2x icon"></i>
+<div class="mono1">  
+<span class="mono">/*Program 01.<br>  
+  
+Outputs the name of a computer on the console*/</span> - multi lines comment (lines 1 - 2)</div> 
+
+<div class="mono1"> 
+<span class="mono">// Main function </span> - single line comment (line 8).</div> 
+
+<div class="mono1"> 
+<span class="mono">class</span> - The class contains the data and methods to be used in the program. Methods define the behavior of the class (line 6).</div>
+
+<div class="mono1"> 
+<span class="mono">Main()</span> - method is the entry-point of our application (line 9).</div>
+
+<!-- exp -->
+
+<!-- task -->
+<i class="fas fa-puzzle-piece fa-2x icon"></i>
+<div class="mono1">
+Ex. 01. Write a program that displays the version of operating 
+system of your computer and number of its CPUs. You can find info on <a href="https://stackoverflow.com/">stack overflow</a>.
+</div>
+<a href="#menu"><button class="btn btn-outline-primary guzik">menu</button></a>
+<a href="#menu"><button class="btn btn-outline-primary guzik">github</button></a>
+<a href="#menu"><button class="btn btn-outline-primary guzik">online compiler</button></a>
+<hr>
+</div>
+<!-- 2 ------------------------------------------->
+<!-- 3 ------------------------------------------->
+<div class="subchapter">
+<div class-"kod">
+<h4 id="102">1.02 The Name of the Computer</h4>  
+<p class="card card-body bg-light intro2">Program 01 gets the name of the computer it runs on and outputs it to the console. Some basic concepts of C# programming are introroduced.</p>
+<pre><code class="csharp">/*Program 03. 
+calculates the value of number pi
+pi = 4/1 - 4/3 + 4/5 - 4/7 ...
+*/
+using System;  
+namespace ComputerStuff 
+{    
+  class Computer
+  {    
+     static void Main(string[] args) 
+    { 
+     double pi = 0.0;
+     double num = 4.0;
+     double den = 1;
+     int n = 10;
+     
+     for(int i = 1; i < 300; i += 1)
+     {
+         den = 2*i-1;
+         double factor = Math.Pow(-1, i+1);
+         den = den * factor;
+         pi += num/den;
+     }  
+     Console.WriteLine("Test 3: pi = " + pi);
+    } 
+   } 
+ } 
+
+ </code></pre>
+</div> <!-- kod -->
+
+<!-- exp -->
+
+<i class="fas fa-graduation-cap fa-2x icon"></i>
+<div class="mono1">  
+<span class="mono">/*Program 01.<br>  
+  
+Outputs the name of a computer on the console*/</span> - multi lines comment (lines 1 - 2)</div> 
+
+<div class="mono1"> 
+<span class="mono">// Main function </span> - single line comment (line 8).</div> 
+
+<div class="mono1"> 
+<span class="mono">class</span> - The class contains the data and methods to be used in the program. Methods define the behavior of the class (line 6).</div>
+
+<div class="mono1"> 
+<span class="mono">Main()</span> - method is the entry-point of our application (line 9).</div>
+
+<!-- exp -->
+
+<!-- task -->
+<i class="fas fa-puzzle-piece fa-2x icon"></i>
+<div class="mono1">
+Ex. 01. Write a program that displays the version of operating 
+system of your computer and number of its CPUs. You can find info on <a href="https://stackoverflow.com/">stack overflow</a>.
+</div>
+<a href="#menu"><button class="btn btn-outline-primary guzik">menu</button></a>
+<a href="#menu"><button class="btn btn-outline-primary guzik">github</button></a>
+<a href="#menu"><button class="btn btn-outline-primary guzik">online compiler</button></a>
+<hr>
+</div>
+
+<!-- 3 ------------------------------------------->
+<!-- 4 ------------------------------------------->
+
+
+<!-- 4 ------------------------------------------->
+
+<!-- TUTAJ -->
+  </div> <!-- II colmn --> 
+
+</div>   
+
+</main>
+
+
+
+    <!--
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+  -->
+
+
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/highlightjs-line-numbers.min.js"></script>
+
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">hljs.initLineNumbersOnLoad({
+    singleLine: true
+});</script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
